@@ -4,25 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Smit Patel | Portfolio - Computer Science Student, Web Developer & Data Science Enthusiast. Crafting modern digital experiences.">
+  <meta name="keywords"
+    content="Smit Patel, smiitpatell, Portfolio, Web Developer, Computer Science, Data Science, Python, JavaScript">
+  <meta name="author" content="Smit Patel">
+
+  <!-- Open Graph / Social Sharing Meta Tags -->
+  <meta property="og:title" content="Smit Patel | Developer Portfolio">
+  <meta property="og:description"
+    content="Crafting Modern Digital Experiences - Open to opportunities in Web Development and Data Science.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://smiitpatell.github.io/PortFolio/">
+  <meta property="og:image" content="assets/img/profile.jpg">
+
   <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
-  <title>Smit Patel | Developer</title>
+  <title>Smit Patel | Developer Portfolio</title>
 
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="assets/fonts/font_main.css" rel="stylesheet">
-
-
-
 </head>
 
 <body>
 
   <header class="glass">
-    <div class="logo">Smit Patel</div>
+    <div class="logo"><a href="#home" style="text-decoration: none; color: inherit;">Smit Patel</a></div>
 
     <nav class="nav-links">
-      <a href="#home">Home</a>
+      <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -30,22 +40,13 @@
     </nav>
 
     <div class="right-controls">
-      <button id="themeToggle">🌙</button>
-      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+      <button id="themeToggle" title="Toggle Light/Dark Theme">🌙</button>
+      <div class="menu-btn" onclick="toggleMenu()" title="Toggle Menu">☰</div>
     </div>
   </header>
 
-  <!-- <section id="home" class="hero">
-  <div class="hero-text">
-    <h1>Crafting <span>Modern</span><br>Digital Experiences</h1>
-    <p><span id="typing"></span></p>
-    <a href="#" class="btn">View Work</a>
-  </div>
-  <div class="hero-glow"></div>
-</section> -->
-
-<!-- /* ================= HOME SECTION ================= */ -->
-<section id="home" class="hero">
+  <!-- ================= HOME SECTION ================= -->
+  <section id="home" class="hero">
     <div class="hero-content">
 
       <div class="hero-text">
@@ -54,22 +55,24 @@
 
         <!-- Social Icons -->
         <div class="socials">
-          <a href="https://github.com/smiitpatell" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://in.linkedin.com/in/smiitpatell" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://youtube.com/@smiitpatell" target="_blank"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.instagram.com/smiitpatell" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/smiitpatell" target="_blank" rel="noopener noreferrer" title="GitHub Profile"><i
+              class="fab fa-github"></i></a>
+          <a href="https://in.linkedin.com/in/smiitpatell" target="_blank" rel="noopener noreferrer"
+            title="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+          <a href="https://youtube.com/@smiitpatell" target="_blank" rel="noopener noreferrer"
+            title="YouTube Channel"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/smiitpatell" target="_blank" rel="noopener noreferrer"
+            title="Instagram Profile"><i class="fab fa-instagram"></i></a>
         </div>
 
-        <a href="https://drive.google.com/file/d/1UqJ2u1KoO08xuSPS9gS9qW_QprsHqEWl/view?usp=drive_link" target="_blank" class="btn">View
-          Resume</a>
+        <a href="https://drive.google.com/file/d/1UqJ2u1KoO08xuSPS9gS9qW_QprsHqEWl/view?usp=drive_link" target="_blank"
+          rel="noopener noreferrer" class="btn">
+          <i class="fas fa-file-alt" style="margin-right: 8px;"></i>View Resume
+        </a>
       </div>
 
       <div class="hero-image">
-        <!-- <img src="https://media.licdn.com/dms/image/v2/D4D03AQGwhaithQbvyA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700308844639?e=1773878400&v=beta&t=FOv3pmAGO-5GjjboeZqCuYJ23RhL9yS3f1PbzyEBrqo" alt="Smit"> -->
-    
-        <img src="assets/img/profile.jpg" alt="Smit">
-        <!-- <img src="assets/img/stylis.jpg" alt="Smit"> -->
-        
+        <img src="assets/img/profile.jpg" alt="Smit Patel">
       </div>
 
     </div>
@@ -77,136 +80,190 @@
     <div class="hero-glow"></div>
   </section>
 
-  <!-- /* ================= ABOUT SECTION ================= */ -->
+  <!-- ================= ABOUT SECTION ================= -->
   <section id="about" class="glass-section reveal">
-    <h2>About Me</h2><hr><br>
-    <p style="margin-top: 10px;"><strong>" Open to opportunities in Web Development and Data Science roles. "</strong></p>
+    <h2>About Me</h2>
+    <hr><br>
+    <!-- <p class="about-tagline"><strong>" Open to opportunities in Web Development and Data Science roles. "</strong></p> -->
+    <p><strong>" Open to opportunities in Web Development and Data Science roles. "</strong></p>
     <br>
     <p>
-     Dedicated Computer Science student with a focus on developing strong
-organizational skills. Actively seeking first professional opportunity to
-apply academic knowledge in real-world scenarios. Familiar with coding
-languages and software engineering practices. Prepared to support team
-objectives and drive project success.</p>
-    
+      Dedicated Computer Science student with a focus on developing strong organizational and technical skills.
+      Actively seeking professional opportunities to apply academic knowledge in real-world software engineering and
+      data projects.
+      Passionate about building intuitive web applications, solving complex algorithmic challenges, and continuously
+      learning modern technologies.
+    </p>
   </section>
 
-<!-- /* ================= SKILLS SECTION ================= */ -->
+  <!-- ================= SKILLS SECTION ================= -->
+  <section id="skills" class="glass-section reveal">
+    <h2>Technical Expertise</h2>
+    <hr>
 
-<section id="skills" class="glass-section reveal">
-  <h2>Technical Expertise</h2><hr>
-
-  <!-- Frontend -->
-  <div class="skills-category">
-    <h3>Frontend Development</h3>
-    <div class="skills-grid">
-      <span><i class="fab fa-html5"></i> HTML</span>
-      <span><i class="fab fa-css3-alt"></i> CSS</span>
-      <span><i class="fab fa-js"></i> JavaScript</span>
-      <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+    <!-- Frontend -->
+    <div class="skills-category">
+      <h3><i class="fas fa-laptop-code cat-icon"></i>Frontend Development</h3>
+      <div class="skills-grid">
+        <span><i class="fab fa-html5"></i> HTML</span>
+        <span><i class="fab fa-css3-alt"></i> CSS</span>
+        <span><i class="fab fa-js"></i> JavaScript</span>
+        <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+      </div>
     </div>
-  </div>
 
-  <!-- Database -->
-  <div class="skills-category">
-    <h3>Database Management</h3>
-    <div class="skills-grid">
-      <span><i class="fas fa-database"></i> MySQL</span>
-      <span><i class="fab fa-php"></i> PHP</span>
+    <!-- Database -->
+    <div class="skills-category">
+      <h3><i class="fas fa-database cat-icon"></i>Database Management</h3>
+      <div class="skills-grid">
+        <span><i class="fas fa-database"></i> MySQL</span>
+        <span><i class="fab fa-php"></i> PHP</span>
+      </div>
     </div>
-  </div>
 
-  <!-- Programming -->
-  <div class="skills-category">
-    <h3>Programming Languages</h3>
-    <div class="skills-grid">
-      <span><i class="fas fa-code"></i> C</span>
-      <span><i class="fas fa-code"></i> C++</span>
-      <span><i class="fab fa-java"></i> Java</span>
-      <span><i class="fab fa-python"></i> Python</span>
-      <span><i class="fas fa-leaf"></i> Django</span>
+    <!-- Programming -->
+    <div class="skills-category">
+      <h3><i class="fas fa-terminal cat-icon"></i>Programming Languages</h3>
+      <div class="skills-grid">
+        <span><i class="fas fa-code"></i> C</span>
+        <span><i class="fas fa-code"></i> C++</span>
+        <span><i class="fab fa-java"></i> Java</span>
+        <span><i class="fab fa-python"></i> Python</span>
+        <span><i class="fas fa-leaf"></i> Django</span>
+      </div>
     </div>
-  </div>
 
-  <!-- Scripting -->
-  <div class="skills-category">
-    <h3>Scripting & Environment</h3>
-    <div class="skills-grid">
-      <span><i class="fab fa-linux"></i> Linux</span>
+    <!-- Scripting & Environment -->
+    <div class="skills-category">
+      <h3><i class="fas fa-server cat-icon"></i>Scripting & Environment</h3>
+      <div class="skills-grid">
+        <span><i class="fab fa-linux"></i> Linux</span>
+      </div>
     </div>
-  </div>
 
-  <!-- Core Concepts -->
-  <div class="skills-category">
-    <h3>Core Concepts</h3>
-    <div class="skills-grid">
-      <span><i class="fas fa-project-diagram"></i> Data Structures</span>
-      <span><i class="fas fa-brain"></i> Algorithms</span>
-      <span><i class="fas fa-lightbulb"></i> Problem Solving</span>
+    <!-- Core Concepts -->
+    <div class="skills-category">
+      <h3><i class="fas fa-brain cat-icon"></i>Core Concepts</h3>
+      <div class="skills-grid">
+        <span><i class="fas fa-project-diagram"></i> Data Structures</span>
+        <span><i class="fas fa-brain"></i> Algorithms</span>
+        <span><i class="fas fa-lightbulb"></i> Problem Solving</span>
+      </div>
     </div>
-  </div>
 
-</section>
+  </section>
 
-<!-- /* ================= PROJECTS SECTION ================= */ -->
+  <!-- ================= PROJECTS SECTION ================= -->
   <section id="projects" class="glass-section reveal">
-    <h2>Featured Projects</h2><hr>
+    <h2>Featured Projects</h2>
+    <hr>
 
     <div class="cards">
+      <!-- Project 1 -->
       <div class="card">
-        <h3>Hotel Management</h3>
-        <p>Python based system with booking & data storage.</p>
+        <div class="card-icon"><i class="fas fa-hotel"></i></div>
+        <h3>Hotel Management System</h3>
+        <p>A Python-based hotel management system handling room bookings, guest records, check-in/out workflows, and
+          automated billing storage.</p>
+        <div class="tech-tags">
+          <span>Python</span>
+          <span>MySQL</span>
+          <span>CLI / GUI</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/smiitpatell" target="_blank" rel="noopener noreferrer" class="card-btn"><i
+              class="fab fa-github"></i> Code</a>
+          <a href="#contact" class="card-btn outline"><i class="fas fa-info-circle"></i> Details</a>
+        </div>
       </div>
 
+      <!-- Project 2 -->
       <div class="card">
+        <div class="card-icon"><i class="fas fa-battery-charging"></i></div>
         <h3>Charging Alarm App</h3>
-        <p>Android battery alert system with smart detection.</p>
+        <p>An Android application designed to protect battery health with smart full-charge alarms, custom alert
+          notifications, and sound triggers.</p>
+        <div class="tech-tags">
+          <span>Android</span>
+          <span>Java</span>
+          <span>Smart Alerts</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/smiitpatell" target="_blank" rel="noopener noreferrer" class="card-btn"><i
+              class="fab fa-github"></i> Code</a>
+          <a href="#contact" class="card-btn outline"><i class="fas fa-info-circle"></i> Details</a>
+        </div>
       </div>
 
+      <!-- Project 3 -->
       <div class="card">
+        <div class="card-icon"><i class="fas fa-users"></i></div>
         <h3>Samaj Web App</h3>
-        <p>Community profile management & interest system.</p>
+        <p>A web application built for community profile management, member directory, announcements, and shared
+          interest tracking.</p>
+        <div class="tech-tags">
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>HTML/CSS</span>
+          <span>Bootstrap</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/smiitpatell" target="_blank" rel="noopener noreferrer" class="card-btn"><i
+              class="fab fa-github"></i> Code</a>
+          <a href="#contact" class="card-btn outline"><i class="fas fa-info-circle"></i> Details</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- /* ================= CONTACT SECTION ================= */ -->
+  <!-- ================= CONTACT SECTION ================= -->
   <section id="contact" class="glass-section reveal">
-    <h2>Contact Me</h2><hr>
-    <form>
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea placeholder="Your Message"></textarea>
-      <button class="btn">Send Message</button>
-    </form>
+    <h2>Contact Me</h2>
+    <hr>
+
+    <div class="contact-container">
+      <!-- Contact Info Box -->
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p>Feel free to reach out for collaboration, job opportunities, or project inquiries. I'd love to connect!</p>
+
+        <div class="contact-socials">
+          <a href="https://github.com/smiitpatell" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-github"></i></a>
+          <a href="https://in.linkedin.com/in/smiitpatell" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://youtube.com/@smiitpatell" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper">
+        <form id="contactForm">
+          <div class="input-group">
+            <input type="text" id="formName" placeholder="Your Name" required>
+          </div>
+          <div class="input-group">
+            <input type="email" id="formEmail" placeholder="Your Email" required>
+          </div>
+          <div class="input-group">
+            <textarea id="formMessage" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn" style="width: 100%;">
+            <i class="fas fa-paper-plane" style="margin-right: 8px;"></i>Send Message
+          </button>
+        </form>
+        <div id="formResponse" class="form-response"></div>
+      </div>
+    </div>
   </section>
 
   <footer>
-    © 2025 Smit Patel | All Rights Reserved
+    <p>© 2025 Smit Patel | All Rights Reserved</p>
+    <a href="#home" class="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></a>
   </footer>
 
   <script src="assets/js/script.js"></script>
 </body>
 
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
