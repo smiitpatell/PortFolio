@@ -4,209 +4,392 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Smit Patel | Portfolio - Computer Science Student, Web Developer & Data Science Enthusiast. Crafting modern digital experiences.">
+  <meta name="keywords"
+    content="Smit Patel, smiitpatell, Portfolio, Web Developer, Computer Science, Data Science, Python, JavaScript">
+  <meta name="author" content="Smit Patel">
+
+  <!-- Open Graph / Social Sharing Meta Tags -->
+  <meta property="og:title" content="Smit Patel | Developer Portfolio">
+  <meta property="og:description"
+    content="Crafting Modern Digital Experiences - Open to opportunities in Web Development and Data Science.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://smiitpatell.github.io/PortFolio/">
+  <meta property="og:image" content="assets/img/profile.jpg">
+
   <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
-  <title>Smit Patel | Developer</title>
+  <title>Smit Patel | Developer Portfolio</title>
 
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="assets/fonts/font_main.css" rel="stylesheet">
-
-
-
 </head>
 
 <body>
 
+  <!-- Ambient Interactive Tech Mesh Canvas -->
+  <canvas id="bg-mesh" aria-hidden="true"></canvas>
+
+  <!-- Signature Custom Cursor -->
+  <div class="custom-cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+  <div class="custom-cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
   <header class="glass">
-    <div class="logo">Smit Patel</div>
+    <div class="logo">
+      <a href="#home" style="text-decoration: none; color: inherit;" class="logo-link">
+        <span class="logo-prefix">&lt;</span>Smit Patel<span class="logo-suffix">&nbsp;/&gt;</span>
+      </a>
+    </div>
 
     <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <div class="nav-indicator" id="navIndicator" aria-hidden="true"></div>
+      <a href="#home" class="active"><span class="nav-num">00.</span> Home</a>
+      <a href="#about"><span class="nav-num">01.</span> About</a>
+      <a href="#skills"><span class="nav-num">02.</span> Skills</a>
+      <a href="#projects"><span class="nav-num">03.</span> Projects</a>
+      <a href="#contact"><span class="nav-num">04.</span> Contact</a>
     </nav>
 
     <div class="right-controls">
-      <button id="themeToggle">🌙</button>
-      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+      <button id="themeToggle" aria-label="Toggle Light/Dark Theme" title="Toggle Light/Dark Theme">🌙</button>
+      <div class="menu-btn" onclick="toggleMenu()" aria-label="Toggle Menu" title="Toggle Menu">
+        <span></span><span></span><span></span>
+      </div>
     </div>
   </header>
 
-  <!-- <section id="home" class="hero">
-  <div class="hero-text">
-    <h1>Crafting <span>Modern</span><br>Digital Experiences</h1>
-    <p><span id="typing"></span></p>
-    <a href="#" class="btn">View Work</a>
-  </div>
-  <div class="hero-glow"></div>
-</section> -->
+  <!-- ================= HOME SECTION (EDITORIAL ASYMMETRIC HERO) ================= -->
+  <section id="home" class="hero-editorial">
+    <!-- Huge Architectural Watermark Backdrop -->
+    <div class="hero-bg-text" aria-hidden="true" data-speed="0.01">SMIT PATEL</div>
 
-<!-- /* ================= HOME SECTION ================= */ -->
-<section id="home" class="hero">
-    <div class="hero-content">
+    <div class="hero-editorial-container">
+      
+      <!-- Zone 1: Meta Ticket & Status Pill -->
+      <div class="hero-meta-zone" data-speed="0.02">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span class="status-text">AVAILABLE FOR WEB &amp; DATA SCIENCE ROLES</span>
+        </div>
+        <div class="hero-coordinate-tag">
+          <span class="geo-coord">23°01'N 72°35'E</span>
+          <span class="geo-divider">//</span>
+          <span class="geo-role">FULLSTACK &amp; DATA SCIENCE</span>
+        </div>
+      </div>
 
-      <div class="hero-text">
-        <h1>Crafting <span>Modern</span><br>Digital Experiences</h1>
-        <p><span id="typing"></span></p>
-
-        <!-- Social Icons -->
-        <div class="socials">
-          <a href="https://github.com/smiitpatell" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://in.linkedin.com/in/smiitpatell" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://youtube.com/@smiitpatell" target="_blank"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.instagram.com/smiitpatell" target="_blank"><i class="fab fa-instagram"></i></a>
+      <!-- Zone 2 & 3: Main Editorial Composition Block (Headline + Integrated Asymmetric Photo) -->
+      <div class="hero-main-composition">
+        
+        <!-- Large Editorial Headline -->
+        <div class="editorial-title-block" data-speed="0.03">
+          <span class="title-kicker">// PERSONAL DIGITAL IDENTITY</span>
+          <h1 class="editorial-h1">
+            <span class="line-1">CRAFTING</span>
+            <span class="line-2"><span class="highlight-text">DIGITAL</span> EXPERIENCES.</span>
+          </h1>
         </div>
 
-        <a href="https://drive.google.com/file/d/1UqJ2u1KoO08xuSPS9gS9qW_QprsHqEWl/view?usp=drive_link" target="_blank" class="btn">View
-          Resume</a>
+        <!-- Integrated Asymmetric Layered Photo Block (NOT a circular photo card) -->
+        <div class="editorial-photo-wrapper" data-speed="0.05">
+          <div class="editorial-photo-frame">
+            <div class="photo-accent-backdrop"></div>
+            <div class="photo-container">
+              <img src="assets/img/profile.jpg" alt="Smit Patel - Web Developer &amp; Data Science Enthusiast" class="editorial-img">
+              <div class="photo-overlay-gradient"></div>
+            </div>
+            <!-- Architectural Corner Accents & Tag -->
+            <div class="photo-corner corner-top-left"></div>
+            <div class="photo-corner corner-bottom-right"></div>
+            <div class="photo-meta-tag"><span class="tag-num">01</span><span class="tag-label">SMIT PATEL</span></div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="hero-image">
-        <!-- <img src="https://media.licdn.com/dms/image/v2/D4D03AQGwhaithQbvyA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700308844639?e=1773878400&v=beta&t=FOv3pmAGO-5GjjboeZqCuYJ23RhL9yS3f1PbzyEBrqo" alt="Smit"> -->
-    
-        <img src="assets/img/profile.jpg" alt="Smit">
-        <!-- <img src="assets/img/stylis.jpg" alt="Smit"> -->
-        
+      <!-- Zone 4: Integrated Interactive Typing Bio -->
+      <div class="hero-bio-zone" data-speed="0.02">
+        <div class="bio-terminal-box">
+          <span class="terminal-prompt">$ sys.info &gt;</span>
+          <span id="typing" class="typing-text"></span><span class="cursor-blink">|</span>
+        </div>
+      </div>
+
+      <!-- Zone 5: CTAs & Social Connections Bar -->
+      <div class="hero-action-zone" data-speed="0.03">
+        <a href="https://drive.google.com/file/d/1UqJ2u1KoO08xuSPS9gS9qW_QprsHqEWl/view?usp=drive_link" target="_blank"
+          rel="noopener noreferrer" class="btn shimmer-btn hero-resume-btn">
+          <i class="fas fa-file-alt" style="margin-right: 8px;"></i>View Resume
+          <i class="fas fa-arrow-right btn-icon-arrow" style="margin-left: 8px;"></i>
+        </a>
+
+        <div class="editorial-socials">
+          <span class="socials-label">// CONNECT:</span>
+          <div class="social-links-inline">
+            <a href="https://github.com/smiitpatell" target="_blank" rel="noopener noreferrer" title="GitHub Profile" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+            <a href="https://in.linkedin.com/in/smiitpatell" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+            <a href="https://youtube.com/@smiitpatell" target="_blank" rel="noopener noreferrer" title="YouTube Channel" aria-label="YouTube Channel"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/smiitpatell" target="_blank" rel="noopener noreferrer" title="Instagram Profile" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
       </div>
 
     </div>
 
-    <div class="hero-glow"></div>
+    <!-- Minimalist Editorial Scroll Indicator -->
+    <div class="editorial-scroll-indicator" aria-hidden="true">
+      <span class="scroll-text">EXPLORE</span>
+      <div class="scroll-line"><div class="scroll-line-inner"></div></div>
+    </div>
   </section>
 
-  <!-- /* ================= ABOUT SECTION ================= */ -->
+  <!-- Section Connector Line -->
+  <div class="section-divider-node" aria-hidden="true"><span class="line"></span><span class="node">+</span><span class="line"></span></div>
+
+  <!-- ================= ABOUT SECTION ================= -->
   <section id="about" class="glass-section reveal">
-    <h2>About Me</h2><hr><br>
-    <p style="margin-top: 10px;"><strong>" Open to opportunities in Web Development and Data Science roles. "</strong></p>
+    <div class="card-corner corner-tl"></div>
+    <div class="card-corner corner-tr"></div>
+    <div class="card-corner corner-bl"></div>
+    <div class="card-corner corner-br"></div>
+    
+    <div class="section-tag">// 01. ABOUT ME</div>
+    <h2>About Me</h2>
+    <hr><br>
+    <p class="about-tagline"><strong>" Open to opportunities in Web Development and Data Science roles. "</strong></p>
     <br>
     <p>
-     Dedicated Computer Science student with a focus on developing strong
-organizational skills. Actively seeking first professional opportunity to
-apply academic knowledge in real-world scenarios. Familiar with coding
-languages and software engineering practices. Prepared to support team
-objectives and drive project success.</p>
-    
+      Dedicated Computer Science student with a focus on developing strong organizational and technical skills.
+      Actively seeking professional opportunities to apply academic knowledge in real-world software engineering and
+      data projects.
+      Passionate about building intuitive web applications, solving complex algorithmic challenges, and continuously
+      learning modern technologies.
+    </p>
   </section>
 
-<!-- /* ================= SKILLS SECTION ================= */ -->
+  <!-- Section Connector Line -->
+  <div class="section-divider-node" aria-hidden="true"><span class="line"></span><span class="node">+</span><span class="line"></span></div>
 
-<section id="skills" class="glass-section reveal">
-  <h2>Technical Expertise</h2><hr>
+  <!-- ================= SKILLS SECTION ================= -->
+  <section id="skills" class="glass-section reveal">
+    <div class="card-corner corner-tl"></div>
+    <div class="card-corner corner-tr"></div>
+    <div class="card-corner corner-bl"></div>
+    <div class="card-corner corner-br"></div>
 
-  <!-- Frontend -->
-  <div class="skills-category">
-    <h3>Frontend Development</h3>
-    <div class="skills-grid">
-      <span><i class="fab fa-html5"></i> HTML</span>
-      <span><i class="fab fa-css3-alt"></i> CSS</span>
-      <span><i class="fab fa-js"></i> JavaScript</span>
-      <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+    <div class="section-tag">// 02. TECHNICAL SKILLS</div>
+    <h2>Technical Expertise</h2>
+    <hr>
+
+    <!-- Frontend -->
+    <div class="skills-category reveal-child">
+      <h3><i class="fas fa-laptop-code cat-icon"></i>Frontend Development</h3>
+      <div class="skills-grid">
+        <span class="skill-chip"><i class="fab fa-html5"></i> HTML</span>
+        <span class="skill-chip"><i class="fab fa-css3-alt"></i> CSS</span>
+        <span class="skill-chip"><i class="fab fa-js"></i> JavaScript</span>
+        <span class="skill-chip"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+      </div>
     </div>
-  </div>
 
-  <!-- Database -->
-  <div class="skills-category">
-    <h3>Database Management</h3>
-    <div class="skills-grid">
-      <span><i class="fas fa-database"></i> MySQL</span>
-      <span><i class="fab fa-php"></i> PHP</span>
+    <!-- Database -->
+    <div class="skills-category reveal-child">
+      <h3><i class="fas fa-database cat-icon"></i>Database Management</h3>
+      <div class="skills-grid">
+        <span class="skill-chip"><i class="fas fa-database"></i> MySQL</span>
+        <span class="skill-chip"><i class="fab fa-php"></i> PHP</span>
+      </div>
     </div>
-  </div>
 
-  <!-- Programming -->
-  <div class="skills-category">
-    <h3>Programming Languages</h3>
-    <div class="skills-grid">
-      <span><i class="fas fa-code"></i> C</span>
-      <span><i class="fas fa-code"></i> C++</span>
-      <span><i class="fab fa-java"></i> Java</span>
-      <span><i class="fab fa-python"></i> Python</span>
-      <span><i class="fas fa-leaf"></i> Django</span>
+    <!-- Programming -->
+    <div class="skills-category reveal-child">
+      <h3><i class="fas fa-terminal cat-icon"></i>Programming Languages</h3>
+      <div class="skills-grid">
+        <span class="skill-chip"><i class="fas fa-code"></i> C</span>
+        <span class="skill-chip"><i class="fas fa-code"></i> C++</span>
+        <span class="skill-chip"><i class="fab fa-java"></i> Java</span>
+        <span class="skill-chip"><i class="fab fa-python"></i> Python</span>
+        <span class="skill-chip"><i class="fas fa-leaf"></i> Django</span>
+      </div>
     </div>
-  </div>
 
-  <!-- Scripting -->
-  <div class="skills-category">
-    <h3>Scripting & Environment</h3>
-    <div class="skills-grid">
-      <span><i class="fab fa-linux"></i> Linux</span>
+    <!-- Scripting & Environment -->
+    <div class="skills-category reveal-child">
+      <h3><i class="fas fa-server cat-icon"></i>Scripting &amp; Environment</h3>
+      <div class="skills-grid">
+        <span class="skill-chip"><i class="fab fa-linux"></i> Linux</span>
+      </div>
     </div>
-  </div>
 
-  <!-- Core Concepts -->
-  <div class="skills-category">
-    <h3>Core Concepts</h3>
-    <div class="skills-grid">
-      <span><i class="fas fa-project-diagram"></i> Data Structures</span>
-      <span><i class="fas fa-brain"></i> Algorithms</span>
-      <span><i class="fas fa-lightbulb"></i> Problem Solving</span>
+    <!-- Core Concepts -->
+    <div class="skills-category reveal-child">
+      <h3><i class="fas fa-brain cat-icon"></i>Core Concepts</h3>
+      <div class="skills-grid">
+        <span class="skill-chip"><i class="fas fa-project-diagram"></i> Data Structures</span>
+        <span class="skill-chip"><i class="fas fa-brain"></i> Algorithms</span>
+        <span class="skill-chip"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+      </div>
     </div>
-  </div>
 
-</section>
+  </section>
 
-<!-- /* ================= PROJECTS SECTION ================= */ -->
+  <!-- Section Connector Line -->
+  <div class="section-divider-node" aria-hidden="true"><span class="line"></span><span class="node">+</span><span class="line"></span></div>
+
+  <!-- ================= PROJECTS SECTION ================= -->
   <section id="projects" class="glass-section reveal">
-    <h2>Featured Projects</h2><hr>
+    <div class="card-corner corner-tl"></div>
+    <div class="card-corner corner-tr"></div>
+    <div class="card-corner corner-bl"></div>
+    <div class="card-corner corner-br"></div>
+
+    <div class="section-tag">// 03. WORK PORTFOLIO</div>
+    <h2>Featured Projects</h2>
+    <hr>
 
     <div class="cards">
-      <div class="card">
-        <h3>Hotel Management</h3>
-        <p>Python based system with booking & data storage.</p>
+      <!-- Project 1 -->
+      <div class="card spotlight-card reveal-child">
+        <div class="card-index-watermark">01</div>
+        <div class="card-corner corner-tl"></div>
+        <div class="card-corner corner-tr"></div>
+        <div class="card-header-flex">
+          <div class="card-icon"><i class="fas fa-hotel"></i></div>
+          <div class="card-badge">Python App</div>
+        </div>
+        <h3>Hotel Management System</h3>
+        <p>A Python-based hotel management system handling room bookings, guest records, check-in/out workflows, and
+          automated billing storage.</p>
+        <div class="tech-tags">
+          <span>Python</span>
+          <span>MySQL</span>
+          <span>CLI / GUI</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/smiitpatell" target="_blank" rel="noopener noreferrer" class="card-btn shimmer-btn"><i
+              class="fab fa-github"></i> Code</a>
+          <a href="#contact" class="card-btn outline"><i class="fas fa-info-circle"></i> Details</a>
+        </div>
       </div>
 
-      <div class="card">
+      <!-- Project 2 -->
+      <div class="card spotlight-card reveal-child">
+        <div class="card-index-watermark">02</div>
+        <div class="card-corner corner-tl"></div>
+        <div class="card-corner corner-tr"></div>
+        <div class="card-header-flex">
+          <div class="card-icon"><i class="fas fa-battery-charging"></i></div>
+          <div class="card-badge">Android App</div>
+        </div>
         <h3>Charging Alarm App</h3>
-        <p>Android battery alert system with smart detection.</p>
+        <p>An Android application designed to protect battery health with smart full-charge alarms, custom alert
+          notifications, and sound triggers.</p>
+        <div class="tech-tags">
+          <span>Android</span>
+          <span>Java</span>
+          <span>Smart Alerts</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/smiitpatell" target="_blank" rel="noopener noreferrer" class="card-btn shimmer-btn"><i
+              class="fab fa-github"></i> Code</a>
+          <a href="#contact" class="card-btn outline"><i class="fas fa-info-circle"></i> Details</a>
+        </div>
       </div>
 
-      <div class="card">
+      <!-- Project 3 -->
+      <div class="card spotlight-card reveal-child">
+        <div class="card-index-watermark">03</div>
+        <div class="card-corner corner-tl"></div>
+        <div class="card-corner corner-tr"></div>
+        <div class="card-header-flex">
+          <div class="card-icon"><i class="fas fa-users"></i></div>
+          <div class="card-badge">Web Application</div>
+        </div>
         <h3>Samaj Web App</h3>
-        <p>Community profile management & interest system.</p>
+        <p>A web application built for community profile management, member directory, announcements, and shared
+          interest tracking.</p>
+        <div class="tech-tags">
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>HTML/CSS</span>
+          <span>Bootstrap</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/smiitpatell" target="_blank" rel="noopener noreferrer" class="card-btn shimmer-btn"><i
+              class="fab fa-github"></i> Code</a>
+          <a href="#contact" class="card-btn outline"><i class="fas fa-info-circle"></i> Details</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- /* ================= CONTACT SECTION ================= */ -->
+  <!-- Section Connector Line -->
+  <div class="section-divider-node" aria-hidden="true"><span class="line"></span><span class="node">+</span><span class="line"></span></div>
+
+  <!-- ================= CONTACT SECTION ================= -->
   <section id="contact" class="glass-section reveal">
-    <h2>Contact Me</h2><hr>
-    <form>
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea placeholder="Your Message"></textarea>
-      <button class="btn">Send Message</button>
-    </form>
+    <div class="card-corner corner-tl"></div>
+    <div class="card-corner corner-tr"></div>
+    <div class="card-corner corner-bl"></div>
+    <div class="card-corner corner-br"></div>
+
+    <div class="section-tag">// 04. GET IN TOUCH</div>
+    <h2>Contact Me</h2>
+    <hr>
+
+    <div class="contact-container">
+      <!-- Contact Info Box -->
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p>Feel free to reach out for collaboration, job opportunities, or project inquiries. I'd love to connect!</p>
+
+        <div class="contact-socials">
+          <a href="https://github.com/smiitpatell" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i
+              class="fab fa-github"></i></a>
+          <a href="https://in.linkedin.com/in/smiitpatell" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://youtube.com/@smiitpatell" target="_blank" rel="noopener noreferrer" aria-label="YouTube Channel"><i
+              class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper spotlight-card">
+        <form id="contactForm">
+          <div class="input-group">
+            <label for="formName" class="sr-only">Your Name</label>
+            <input type="text" id="formName" placeholder="Your Name" required>
+            <span class="input-focus-line"></span>
+          </div>
+          <div class="input-group">
+            <label for="formEmail" class="sr-only">Your Email</label>
+            <input type="email" id="formEmail" placeholder="Your Email" required>
+            <span class="input-focus-line"></span>
+          </div>
+          <div class="input-group">
+            <label for="formMessage" class="sr-only">Your Message</label>
+            <textarea id="formMessage" placeholder="Your Message" rows="5" required></textarea>
+            <span class="input-focus-line"></span>
+          </div>
+          <button type="submit" class="btn shimmer-btn" style="width: 100%;">
+            <i class="fas fa-paper-plane" style="margin-right: 8px;"></i>Send Message
+          </button>
+        </form>
+        <div id="formResponse" class="form-response"></div>
+      </div>
+    </div>
   </section>
 
   <footer>
-    © 2025 Smit Patel | All Rights Reserved
+    <div class="footer-content">
+      <p>© 2025 Smit Patel | All Rights Reserved</p>
+      <div class="footer-tagline">Engineered with precision &amp; visual signature.</div>
+    </div>
+    <a href="#home" class="back-to-top" title="Back to Top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></a>
   </footer>
 
   <script src="assets/js/script.js"></script>
 </body>
 
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>
